@@ -19,27 +19,3 @@ class ChainIt
     @result
   end
 end
-
-def step1
-  puts 'executing #step_1'
-  # logic goes here...
-
-  Result.new(true, '#step1 done')
-end
-
-def step2
-  puts 'executing #step_2'
-
-  Result.new(true, '#step2 done')
-end
-
-def step3
-  puts 'executing #step_3'
-
-  Result.new(true, '#step3 done')
-end
-
-puts ChainIt.new.chain { step1 }.
-                 chain { step2 }.
-                 chain { step3 }.
-                 result
